@@ -2,30 +2,138 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Spot Light</title></head>
+    <title>Spot Light</title>
     <link rel="stylesheet" href = "style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!--<meta http-equiv="refresh" content=" 0; url=file:///C:/Users/Germ%C3%A1n/Documents/GitHub/PROYECTO/TODO/index.html">-->
+    <script src="https://kit.fontawesome.com/73411ebe55.js" crossorigin="anonymous"></script>
+</head> 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="imagenes/nike.png" alt="logo"></a>
+       <div class="container">
+        <a href="index.html"><img class="logo" src="imagenes/twitch.png" alt="logo"></a>
         <nav>
             <ul class="nav_links">   
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="estadisticas.html">Estadisticas</a></li>
-                <li><a href="rutas.html">Mis Rutas</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#objetivo">Objetivos</a></li>
+                <li><a href="#conocenos">Conocenos</a></li>
+               <!-- <li><a href="estadisticas.html">Estadisticas</a></li>
+                <li><a href="rutas.html">Mis Rutas</a></li>-->
                 
             </ul>
         </nav>
-        <a class="login" href="#"><button>LOG IN</button></a>
+        <!--<a class="login" href="#"><button>LOG IN</button></a>-->
+
+        <div>
+            <button id="show-login" >Login </button>
+        </div>
+    
+        <dialog id="popup" class="popup">
+            <div id="close-btn" class="close-btn">&times;</div>
+                <div class="form">
+                    <h2>Log in</h2>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="form-element">
+                        <button>Sign In</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+        </dialog>
+        <script src="script.js"></script>
+       </div> 
     </header>
-    <h1>
-        SpotLight:Semaforos Inteligentes
-    </h1>
-    <h2>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ex repudiandae ad at odio eum iure laboriosam molestiae dicta? Labore voluptas cupiditate amet asperiores excepturi perferendis velit nam natus voluptatibus?
-    </h2>
+
+    <section id="hero">
+        <h1>SpotLight: <br> Semaforos Inteligentes</h1>
+    </section>
+
+    <section id="objetivo">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Nuestros objetivos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nemo explicabo at nulla ipsam voluptates repudiandae, quibusdam saepe. Nihil laborum dolor quo sint voluptates optio suscipit molestias omnis, dignissimos reprehenderit!<br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quasi a illum vero dolor consequuntur molestias perspiciatis labore eaque. Odit doloremque adipisci ullam, minima harum doloribus non fuga! Vero, laudantium.<br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quasi a illum vero dolor consequuntur molestias perspiciatis labore eaque. Odit doloremque adipisci ullam, minima harum doloribus non fuga! Vero, laudantium.</p>
+            </div> 
+            
+        </div>
+    </section>
+
+    <section id="conocenos">
+    <div class="container">
+        <h2>Conocenos</h2>
+
+        <div class="roles">
+
+            <div class="carta">
+                <h3>Desarrollador Web: Full Stack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed assumenda vero alias aspernatur? Blanditiis est ipsum voluptates, dignissimos labore exercitationem incidunt obcaecati at, quasi nobis animi sunt quos sapiente facilis.</p>
+                <button>+Info</button>
+            </div>
+            <div class="carta">
+                <h3>Diseñadora: UX/UI y Modelado 3D</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed assumenda vero alias aspernatur? Blanditiis est ipsum voluptates, dignissimos labore exercitationem incidunt obcaecati at, quasi nobis animi sunt quos sapiente facilis.</p>
+                <button>+Info</button>
+            </div>
+            <div class="carta">
+                <h3>Desarrollador en Iteligencia Artificial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed assumenda vero alias aspernatur? Blanditiis est ipsum voluptates, dignissimos labore exercitationem incidunt obcaecati at, quasi nobis animi sunt quos sapiente facilis.</p>
+                <button>+Info</button>
+            </div>
+            <div class="carta">
+                <h3>Programador en Hardware y Arduino</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed assumenda vero alias aspernatur? Blanditiis est ipsum voluptates, dignissimos labore exercitationem incidunt obcaecati at, quasi nobis animi sunt quos sapiente facilis.</p>
+                <button>+Info</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <h4>Soluciones</h4>
+                <a href="#">Desarrollo</a>
+                <a href="#">Desarrollo</a>
+                <a href="#">Desarrollo</a>
+                <a href="#">Desarrollo</a>  
+            </div>
+            <div class="box__footer">
+                <h4>Compañia</h4>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>  
+            </div>
+            <div class="box__footer">
+                <h4>Redes Sociales</h4>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>  
+            </div>
+
+        </div>
+    
+        <div class="box__copyright">
+            <hr>
+            <p>Todo los derechos reservados &copy;2022
+            <b>SpotLight</b></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,87 +1,465 @@
-
 *{
-    padding:  0;
+    padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: #444;
+   margin: 0;
 }
-li, a, button{
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-}
+h1 {font-size: 3.3em;}
+h2 {font-size: 3em;}
+h3 {font-size: 1.8em;}
+p {font-size: 1.05em;}
+
 header{
-    background-color: coral;
+    background-color: #000000;
+}
+
+header .container{ 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+   /* justify-content: space-between;*/
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px;
 }
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
 .logo{
-    width: 128px;
-    height: 45px; 
+    margin: 0;
+    padding: 25px 30px;
+    width: 115px;
+    height: 115px; 
     cursor: pointer;
-    position: relative;
-    right: 100px;
 }
-.nav_links{
+
+/*.nav_links,a{
 list-style: none;
+text-decoration: none;
 }
+
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
 }
+
 .nav_links li a{
     color: white;
     transition: all 0.3s ease 0s;
 }
+
 .nav_links li a:hover{
-    color:cyan;
+    color: blueviolet;
+}*/
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
 }
-button{
-    padding: 9px 25px;
-    background-color: rgba(0, 139, 169, 1);
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease 0s;
+
+}
+
+header a:hover{
+    color: blueviolet; 
+}
+
+#show-login{
+    padding: 10px 25px; 
+    background-color:blueviolet;
     border: none;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
-button:hover{
-    background-color: cornflowerblue;
-}
-/*nav ul {
-    background-color: #757575;
-    width: 100%;
-    list-style-type: none;
-    text-align: center;
-}
-nav li {
-    display: inline-flex;
-}
-nav a {
+    font-weight: 500;
+    font-size: 16px;
     text-decoration: none;
     color: white;
-    padding: 20px;
-    width: 200px;  
-    font-size: 25px; 
 }
-nav li:hover {
-    background-color: #555555;
+
+#show-login:hover{
+    background-color: rgb(107, 36, 173);
 }
-.brand img{
-    width: 80px;
-    height: 80px;
-    position: relative;
-    right: 200px;
-    bottom: 20px;
+
+.carta button{
+    padding: 9px 25px;
+    background-color:blueviolet;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
 }
-header{
-    justify-content: space-between;
+
+.carta button:hover{
+    background-color: rgb(107, 36, 173);
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    Justify-content: center;
+    text-align: center;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imagenes/semaforo1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-.logo{
-    background-color: aqua;
+
+#objetivo .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#conocenos{
+    background-color: rgb(30,30,30);
+    color: #fff;
+    text-align: center;
+}
+
+#conocenos .container{
+    padding: 120px 12px;
+}
+
+#conocenos h2{
+    margin-top: 0;
+   padding-bottom: 25px;
+}
+
+#conocenos h3{
+    padding: 15px; 
+}
+
+#conocenos p{
+    display: none;
+}
+
+#conocenos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imagenes/desarrollo-web.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imagenes/diseno.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imagenes/inteligencia-artificial.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Imagenes/hardware.jpg");
+}
+/*
+footer{
+    background-color: rgb(200,200,200);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }*/
+
+
+
+/*.center {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .center button { 
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color:#222;
+    background:#f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    }*/
+
+/*FOOTER*/
+
+footer{ 
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #fff8f8;
+    background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo{
+    width: 100px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h4{
+    font-size: 20px;
+    margin-top: 30px;
+    color: #3a3a3a;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+    /*PREGUNTAR SOBRE LA TRANSICION, Y JAVASCRIPT*/
+.popup {
+    position:absolute;   
+    top:50%;
+    left:50%;
+    opacity: 1;
+    transform:translate(-50%, -50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background: #fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms,
+}
+.popup active{
+    top: 50%;
+    opacity: 1;
+    transform:translate(-50%, -50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms,
+}
+.popup .close-btn {
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px; height:15px;
+    background: #888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup .form h2 {
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+}
+.popup .form .form-element{
+    margin:15px 0px;
+}
+.popup .form .form-element label {
+    font-size:14px;
+    color:#222;
+}   
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+    margin-top:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid #aaa;
+    border-radius: 5px;
+}
+.popup .form .form-element input[type="checkbox"] {
+    margin-right:5px;
+}
+.popup .form .form-element button {
+    width:100%;
+    height:48px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#222;
+    color:#f5f5f5;
+    border-radius:10px;
+    cursor:pointer;
+}
+.popup .form .form-element a {
+    display:block;
+    text-align:right;
+    font-size:15px;
+    color:#1a79ca;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+@media (min-width: 720px) {
+
+    header{
+        /*position: fixed;*/   
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+    
+    header nav{
+        flex-direction: row;
+        display: inline-block;
+        padding-bottom: 0;
+   }
+   
+    .nav_links li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .nav_links li a{  
+        transition: all 0.3s ease 0s;
+    }
+
+    #hero h1{
+        font-size: 3.8em;
+    }
+    
+    #objetivo .container{
+        display: flex;
+        justify-content: space-evenly  ;
+    }
+    
+    #objetivo .texto{
+        width: 50%;
+        text-align: initial;
+        display: flex;
+        padding-left: 50px;
+        padding-right: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #objetivo .img-container{
+        background-image: url("Imagenes/semaforo2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #objetivo h2{
+        margin-top: 0px;
+        padding-bottom: 50px;
+    }
+    
+}
