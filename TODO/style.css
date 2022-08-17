@@ -17,14 +17,105 @@ h2 {font-size: 3em;}
 h3 {font-size: 1.8em;}
 p {font-size: 1.05em;}
 
-header{
+header .container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*flex-direction: column;*/
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+    z-index: 100000;
+}
+
+.sticky{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(181, 181, 181);
+
+}
+
+/*.logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform-origin: 0.6s;
+}*/
+
+header .container ul{
+    list-style: none;
+}
+
+header .container ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.container ul li a{
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.container ul li a:hover{
+    color: rgb(107, 36, 173);
+    font-size: large;
+}
+
+
+
+#show-login{
+    padding: 10px 25px; 
+    background-color:blueviolet;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+#show-login:hover{
+    background-color: rgb(107, 36, 173);
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    display: inline-block;
+    padding-bottom: 0;
+    text-align: center;
+    justify-content: space-between;
+}   
+                                                                                                        
+/*.container.sticky .logo,*/
+.container.sticky ul li a{
+    color: #000;
+} 
+
+/*header{
     background-color: #000000;
 }
 
 header .container{ 
     display: flex;
     flex-direction: column;
-   /* justify-content: space-between;*/
+   /* justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
@@ -32,7 +123,7 @@ header .container{
 .container{
     max-width: 1400px;
     margin: auto;
-}
+}*/
 
 .logo{
     margin: 0;
@@ -60,7 +151,7 @@ text-decoration: none;
 .nav_links li a:hover{
     color: blueviolet;
 }*/
-
+/*
 header nav{
     display: flex;
     flex-direction: column;
@@ -96,7 +187,7 @@ header a:hover{
 
 #show-login:hover{
     background-color: rgb(107, 36, 173);
-}
+}*/
 
 .carta button{
     padding: 9px 25px;
@@ -121,7 +212,7 @@ header a:hover{
     align-items: center;
     Justify-content: center;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
     color: white;
     background-image: linear-gradient(
         0deg,
@@ -136,7 +227,7 @@ header a:hover{
 
 #objetivo .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 150px 12px;
 }
 
 #conocenos{
@@ -405,7 +496,7 @@ footer{
 @media (min-width: 720px) {
 
     header{
-        /*position: fixed;*/   
+        /*position: fixed; */
         width: 100%;
     }
 
