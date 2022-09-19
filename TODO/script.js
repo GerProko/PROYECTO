@@ -12,6 +12,20 @@ btnHideLogin.addEventListener("click",()=>{
     popup.close();
 })
 
+const btnShowRegister = 
+document.querySelector("#show-register");
+const btnHideRegister = 
+document.querySelector("#close-btn");
+const popup_register = 
+document.querySelector("#popup_register");
+
+btnShowRegister.addEventListener("click",()=>{
+    popup.showModal();
+})
+btnHideRegister.addEventListener("click",()=>{
+    popup.close();
+})
+
 var navbar = document.getElementById("Header") //agarro el header identificandolo por el id y lo guardo en una variable
 
 window.addEventListener("scroll", () =>{ //cuando scrolleo

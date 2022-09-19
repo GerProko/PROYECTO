@@ -13,17 +13,21 @@
 <body>
     <header >
         <div class="container"id="Header">
-             <a href="index.html"><img class="logo" src="imagenes/twitch.png" alt="logo"></a>
-             <nav>
-                 <ul class="nav_links">   
+            <a href="index.html"><img class="logo" src="imagenes/twitch.png" alt="logo"></a>
+            <nav>
+                <ul class="nav_links">   
                      <li><a href="#hero">Inicio</a></li>
                      <li><a href="#objetivo">Objetivos</a></li>
                      <li><a href="#conocenos">Conocenos</a></li>
                  <!-- <li><a href="estadisticas.html">Estadisticas</a></li>
                      <li><a href="rutas.html">Mis Rutas</a></li>-->
                      
-                 </ul>
-             </nav><button id="show-login" >Login </button>
+                </ul>
+            </nav>
+            <nav class="nav_buttons">
+                <button id="show-login" >Log in </button>
+                <button id="show-register" >Register </button>
+            </nav>    
              <!--<a class="login" href="#"><button>LOG IN</button></a>-->
          </div> 
  
@@ -53,6 +57,35 @@
                      </div>
                  </div>
          </dialog>
+
+         <dialog id="popup_register" class="popup_register">
+            <div id="close-btn" class="close-btn">&times;</div>
+                <div class="form">
+                    <h2>Registro</h2>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-element">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="confirm_password" id="confirm_password" placeholder="Confirm password">
+                    </div>
+                <div class="form-element">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="form-element">
+                        <button>Sign In</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+        </dialog>
  
      </header>
 
