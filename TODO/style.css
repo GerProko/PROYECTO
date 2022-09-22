@@ -68,15 +68,13 @@ header .container ul li{
 }
 
 .container ul li a:hover{
-    color: rgb(107, 36, 173);
+    color: rgb(0, 255, 21);
     font-size: large;
 }
 
-
-
 #show-login{
     padding: 10px 25px; 
-    background-color:blueviolet;
+    background-color:rgb(255, 255, 0);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -84,16 +82,17 @@ header .container ul li{
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #show-login:hover{
-    background-color: rgb(107, 36, 173);
+    background-color: rgb(190, 190, 0);
+    font-size: larger;
 }
 
 #show-register{
     padding: 10px 25px; 
-    background-color:blueviolet;
+    background-color:rgb(255, 255, 0);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -101,15 +100,26 @@ header .container ul li{
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #show-register:hover{
-    background-color: rgb(107, 36, 173);
+    background-color: rgb(190, 190, 0);
+    font-size: larger;
+}
+/*
+.nav_buttons>button{
+    margin: 10px;
+    padding: 10px;
+}
+*/
+
+#show-register{
+    margin: 10px;
 }
 
-.nav_buttons{
-padding: 0;
+#show-register{
+    margin: 10px;
 }
 
 header .container{
@@ -435,7 +445,7 @@ footer{
 
     /*PREGUNTAR SOBRE LA TRANSICION, Y JAVASCRIPT*/
 .popup {
-    position:absolute;   
+    position:fixed;   
     top:50%;
     left:50%;
     opacity: 1;
@@ -444,7 +454,7 @@ footer{
     padding:20px 30px;
     background: #fff;
     box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
-    border-radius:10px;
+    /*border-radius:10px;*/
     transition:top 0ms ease-in-out 200ms,
                opacity 200ms ease-in-out 0ms,
                transform 200ms ease-in-out 0ms,
@@ -516,7 +526,7 @@ footer{
 }
 /*------------------------------------------------------------*/
 .popup_register {
-    position:absolute;   
+    position:fixed;   
     top:50%;
     left:50%;
     opacity: 1;
@@ -525,7 +535,7 @@ footer{
     padding:20px 30px;
     background: #fff;
     box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
-    border-radius:10px;
+    /*border-radius:10px;*/
     transition:top 0ms ease-in-out 200ms,
                opacity 200ms ease-in-out 0ms,
                transform 200ms ease-in-out 0ms,
@@ -572,9 +582,6 @@ footer{
     outline:none;
     border:1px solid #aaa;
     border-radius: 5px;
-}
-.popup_register .form .form-element input[type="checkbox"] {
-    margin-right:5px;
 }
 .popup_register .form .form-element button {
     width:100%;
