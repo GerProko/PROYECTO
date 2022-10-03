@@ -31,8 +31,8 @@ Header .container{
 }
 
 Header .container.sticky{
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: rgb(185, 182, 182);
 
 }
@@ -72,7 +72,23 @@ header .container ul li{
     font-size: large;
 }
 
-#show-login{
+.btn-neon{
+    position:relative;
+    display:inline;
+    padding: 10px 25px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+}
+
+/*#show-login{
     padding: 10px 25px; 
     background-color:rgb(255, 255, 0);
     border: none;
@@ -90,7 +106,7 @@ header .container ul li{
     font-size: larger;
 }
 
-#show-register{
+/*#show-register{
     padding: 10px 25px; 
     background-color:rgb(255, 255, 0);
     border: none;
@@ -115,12 +131,9 @@ header .container ul li{
 */
 
 #show-register{
-    margin: 10px;
+    display: none;
 }
 
-#show-register{
-    margin: 10px;
-}
 
 header .container{
     flex-direction: row;
@@ -137,6 +150,10 @@ header nav{
                                                                                                         
 /*.container.sticky .logo,*/
 .container.sticky ul li a{
+    color: #000;
+} 
+
+.container.sticky a{
     color: #000;
 } 
 
